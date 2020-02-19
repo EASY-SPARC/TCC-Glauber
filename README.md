@@ -22,8 +22,11 @@ Os algoritmos foram desenvolvidos para rodar no ecossistema [ROS](https://www.ro
 Um guia de instalação completo do ROS Melodic pode ser encontrado na [página oficial](http://wiki.ros.org/melodic/Installation). Neste trabalho, foi obtida a versão do repositório oficial, com a instalação completa no Ubuntu 18.04. Sumarizando, foram executados os seguintes comandos:
 
 `$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
+
 `$ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
+
 `$ sudo apt update`
+
 `$ sudo apt install ros-melodic-desktop-full`
 
 
