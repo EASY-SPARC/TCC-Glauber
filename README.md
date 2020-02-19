@@ -15,9 +15,27 @@ Os algoritmos foram desenvolvidos para rodar no ecossistema [ROS](https://www.ro
 
 \* Geralmente é adquirido a partir de uma instalação completa do ROS
 
+## Instalação das bibliotecas
+
+### ROS
+
+Um guia de instalação completo do ROS Melodic pode ser encontrado na [página oficial](http://wiki.ros.org/melodic/Installation). Neste trabalho, foi obtida a versão do repositório oficial, com a instalação completa no Ubuntu 18.04. Sumarizando, foram executados os seguintes comandos:
+
+`$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
+`$ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
+`$ sudo apt update`
+`$ sudo apt install ros-melodic-desktop-full`
+
+
+### OSQP
+
+O OSQP possui implementações compatíveis com diversas [linguagens](https://osqp.org/docs/get_started/). Nesse trabalho, o *solver* foi utilizado em uma aplicação ROS desenvolvida em Python. A partir do gerenciador de pacotes [pip](https://pypi.org/project/pip/), pode-se facilmente instalar a biblioteca com o comando:
+
+`$ pip install osqp`
+
 ## Simulações
 
-Considerando que os pacotes foram devidamente instalados no *workspace* do ROS (via catkin), primeiramente, é interessante iniciar o ROS MASTER:
+Considerando que os pacotes foram devidamente instalados no *workspace* do ROS (via [catkin](http://wiki.ros.org/pt_BR/ROS/Tutorials/InstallingandConfiguringROSEnvironment)), primeiramente, é interessante iniciar o ROS MASTER:
 
 `$ roscore`
 
