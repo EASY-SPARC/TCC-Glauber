@@ -2,12 +2,12 @@
 <launch>
       
       <arg name="goal_0_x" default="7.0"/>
-      <arg name="goal_0_y" default="7.0"/>
-      <arg name="goal_1_x" default="7.0"/>
-      <arg name="goal_1_y" default="-7.0"/>
-      <arg name="goal_2_x" default="-7.0"/>
+      <arg name="goal_0_y" default="0.0"/>
+      <arg name="goal_1_x" default="-7.0"/>
+      <arg name="goal_1_y" default="0.0"/>
+      <arg name="goal_2_x" default="0.0"/>
       <arg name="goal_2_y" default="7.0"/>
-      <arg name="goal_3_x" default="-7.0"/>
+      <arg name="goal_3_x" default="0.0"/>
       <arg name="goal_3_y" default="-7.0"/>
       <arg name="record_file" default="/home/glauberrleite/robot"/>   
     
