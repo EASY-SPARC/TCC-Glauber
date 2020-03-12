@@ -1,4 +1,4 @@
-# Prevenção de colisões por controle preditivo
+# Prevenção de colisões por MPC-ORCA em robôs móveis diferenciais
 
 Este repositório contém os algoritmos utilizados para realizar estratégias de controle local em robôs autônomos navegando em cenários multiagentes, de forma que cada robô recebe uma trajetória de referência e precisa realizar comandos de velocidade / aceleração que evitem situações de colisão, sem a necessidade de replanejamento, nem comunicação direta entre os agentes.
 
