@@ -50,13 +50,19 @@ ou
 
 `$ roslaunch gazebo_worlds world1.launch`
 
-Para rodar o controlador MPC em um robô apenas, é necessário configurar seu ponto inicial e final no arquivo *controller.py* dentro do pacote *mpc* e rodar
+Para rodar o controlador MPC em um robô apenas, pode-se configurar uma posição objetivo (pos_x, pos_y), já que o script gerará uma trajetória usando função logística:
 
-`$ rosrun mpc controller.py`
+`$ rosrun mpc controller.py <pos_x> <pos_y>`
 
-Já o MPC-ORCA, por questões de escalabilidade, utiliza um arquivo de *launch* com as posições iniciais e desejadas dos robôs.
+Já o MPC-ORCA funciona de maneira similar, com a adição do identificador do robô, robot_n. No caso do robô "robot_0", temos <robot_n> = 0.
 
-`$ roslaunch mpc_orca start_controllers.launch`
+`$ rosrun mpc_orca controller.py <robot_n> <pos_x> <pos_y>`
+
+Além disso, são oferecidos arquivos .launch que possibilitam instanciar vários robôs e armazenar os dados da simulação em um *rosbag*.
+
+`$ roslaunch mpc_orca start_controllers_world1.launch`
+
+Para configurar os *goals* e o caminho do *rosbag*, é necessário editar os arquivos .launch.
 
 ## Trajetória
 
