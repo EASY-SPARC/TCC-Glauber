@@ -8,7 +8,7 @@ Os algoritmos foram desenvolvidos para rodar no ecossistema [ROS](https://www.ro
 
 ## Dependências
 
-* [ROS Melodic](https://www.ros.org/)
+* [ROS Melodic](https://www.ros.org/) (Noetic on branch)
 * [Python 2.7](https://www.python.org/)
 * [Gazebo](http://gazebosim.org/) *
 * [OSQP (Operator Splitting Quadratic Program)](https://osqp.org/)
